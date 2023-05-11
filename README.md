@@ -1,7 +1,8 @@
 # youtube-tldw
-Youtube Too Long Didn't Watch
 
-# Usage
+YouTube Too Long Didn't Watch
+
+## Usage
 
 - ```git clone https://github.com/musabgultekin/youtube-tldw```
 - ```pip install -r requirements.txt```
