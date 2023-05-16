@@ -10,9 +10,6 @@ def summarize_video(url, model, debug):
     transcript = YouTubeTranscriptApi.get_transcript(video_id)
     chunk_size_in_lines = 400
 
-    # print a list of OpenAI models
-    # print(openai.Model.list())
-
     for i in range(0, len(transcript), chunk_size_in_lines):
         context = "\n".join([t["text"] for t in transcript[i:i+chunk_size_in_lines]])
         prompt = f"Summarize this youtube video section's transcript with bullet points:\n---\n{context}"
